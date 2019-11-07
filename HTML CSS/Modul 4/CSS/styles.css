@@ -90,7 +90,9 @@ img {
     position: relative;
 }
 .prduct-list-item:hover .button {
-    background: linear-gradient(to right, rgb( 26, 188, 156, 1) 78%, rgb( 26, 188, 156, 0.439) 22%);     
+    background: linear-gradient
+    (to right, rgb( 26, 188, 156, 1) 78%,
+    rgb( 26, 188, 156, 0.439) 22%);     
 }
 .prduct-list-item:not(:nth-child(4n)) {
     margin-right: 30px;
@@ -134,7 +136,9 @@ img {
     border: none;
     position: absolute;
     bottom: 0px;
-    background: linear-gradient(to right, rgb( 0, 0, 0, 1) 78%, rgb( 0, 0, 0, 0.439) 22%);
+    background: linear-gradient
+    (to right, rgb( 0, 0, 0, 1) 78%,
+    rgb( 0, 0, 0, 0.439) 22%);
 }
 .news__list {
     display: block;
