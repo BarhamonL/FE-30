@@ -3,28 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 ul,
 ol {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-
 .container {
     width: 1110px;
     margin: 0 auto;
     background-color: transparent;
 }
-
 .clearfix::after {
     display: table;
     content: "";
@@ -34,7 +29,6 @@ img {
     margin-top: 40px;
     margin-bottom: 50px;
 }
-
 .logotype {
     float: left;
 }
@@ -44,7 +38,6 @@ img {
     float: right;
     margin-top: 3px;
 }
-
 .header__list-item:not(:last-child) {
     margin-right: 35px;
 }
@@ -90,9 +83,7 @@ img {
     position: relative;
 }
 .prduct-list-item:hover .button {
-    background: linear-gradient
-    (to right, rgb( 26, 188, 156, 1) 78%,
-    rgb( 26, 188, 156, 0.439) 22%);     
+    background: linear-gradient(to right, rgb( 26, 188, 156, 1) 78%, rgb( 26, 188, 156, 0.439) 22%);     
 }
 .prduct-list-item:not(:nth-child(4n)) {
     margin-right: 30px;
@@ -136,9 +127,7 @@ img {
     border: none;
     position: absolute;
     bottom: 0px;
-    background: linear-gradient
-    (to right, rgb( 0, 0, 0, 1) 78%,
-    rgb( 0, 0, 0, 0.439) 22%);
+    background: linear-gradient(to right, rgb( 0, 0, 0, 1) 78%, rgb( 0, 0, 0, 0.439) 22%);
 }
 .news__list {
     display: block;
