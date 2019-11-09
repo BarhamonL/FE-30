@@ -31,10 +31,10 @@ img {
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 100px;
-    padding-left: 80px;
 }
 .header__list {
     vertical-align: middle;
+    text-align: center;
 }
 .header__list-item {
     display: inline-block;
