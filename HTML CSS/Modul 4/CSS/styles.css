@@ -47,7 +47,7 @@ img {
 .header__list-link {
     display: inline-block;
     font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "Open Sans", sans-serif;
     color: rgb( 0, 0, 0 );
 }
 .header__list-link:hover {
@@ -143,7 +143,7 @@ img {
 .news__list-item-title {    
     display: block; 
     font-size: 18px;
-    font-family: "OpenSans";
+    font-family: "Open Sans", sans-serif;
     color: rgb( 85, 82, 82 );
     line-height: 1.344;
     margin-top: 16px;
@@ -160,7 +160,7 @@ img {
 .news__list-item-text {
     display: block;  
     font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "Open Sans", sans-serif;
     color: rgb( 85, 82, 82 );
     line-height: 1.657;
     margin-bottom: 16px;            
@@ -174,7 +174,7 @@ img {
     position: absolute;
     margin-bottom: 45px;
     font-size: 16px;
-    font-family: "OpenSans";
+    font-family: "Open Sans", sans-serif;
     color: rgb( 255, 255, 255 );
     line-height: 1.625;
     text-align: center;

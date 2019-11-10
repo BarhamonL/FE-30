@@ -47,7 +47,7 @@ img {
 .header__list-link {
     display: inline-block;
     font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "Open Sans", sans-serif;
     color: rgb( 0, 0, 0 );
 }
 .header__list-link:hover {
@@ -83,10 +83,11 @@ h2 {
     text-align: center;
     padding-right: 269px;
 }
-.arrows {
+.arrows-btns {
     position: absolute;
     display: block;
     width: 1110px;
+    top: 244px;
 }
 .arrows-btn {
     width: 104px;
@@ -94,10 +95,191 @@ h2 {
     background-color: rgb( 78, 198, 171 );
     border: none;
 }
-.arrows-btn.inactive {
+.arrows-btn:first-child {
     float: left;
+    background-image: url(../image/left-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.arrows-btn:last-child {
+    float: right;
+    background-image: url(../image/right-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.arrows-btn.inactive {
     opacity: 0.651;
 }
-.arrows-btn.active {
+
+/* new colection */
+
+.collection {
+    height: 680px;
+    margin: 0 auto;
+    background-image:url("../image/background-new-collection.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+h3 {
+    font-size: 48px;
+    font-family: "Roboto";
+    color: rgb( 81, 81, 81 );
+    text-transform: uppercase;
+    line-height: 0.667;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 600;    
+}
+h3::after {
+    display: block;
+    content: "";
+    width: 164px;
+    height: 7px;
+    margin: 0 auto;
+    background-color: rgb( 26, 188, 156 );
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.collection-list-item {
+    float: left;
+    display: block;
+    width: 255px;
+    height: 322px;
+    position: relative;
+}
+.collection-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.collection-list-item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.button {
+    display: block;
+    width: 255px;
+    height: 40px;
+    border: none;
+    background-color: rgb( 50, 50, 50 );
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, rgb( 50, 50, 50, 1) 78%, rgb( 0, 0, 0, 0.439) 22%);
+}
+.collection-list-item:hover .button {
+    background: linear-gradient(to right, rgb( 26, 188, 156, 1) 78%, rgb( 26, 188, 156, 0.439) 22%);     
+}
+.collection-list-item-department {
+    float: left;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    line-height: 1.778;
+    text-align: left;
+    padding-left: 15px;
+}
+.collection-list-item-price {
     float: right;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    line-height: 1.778;
+    text-align: center;
+    padding-right: 15px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 322px;
+    background-color: rgba(0, 0, 0, .549);
+    border: 10px solid rgba(255, 255, 255, .5);
+    background-clip: padding-box;
+    opacity: 0;
+    visibility: hidden;
+}
+.shopping-list {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.shopping-list-item {
+    float: left;
+}
+.shopping-list-item:not(:last-child) {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+    border: rgb( 255, 255, 255 );
+    border-width: 1px;
+    border-style: solid;
+}
+.shopping-list-item:not(:nth-child(n+3)) {
+    margin-right: 10px;
+}
+.shopping-list-item:nth-child(-n+2) {
+    padding-top: 11px;
+}
+.shopping-list-item:nth-child(3) {
+    padding-top: 9.5px;
+}
+.shopping-list-item:last-child {
+    width: 164px;
+    height: 48px;
+    border: rgb( 255, 255, 255 );
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgb( 50, 50, 50 );
+}
+.shopping-list-link {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb( 255, 255, 255, 0 );
+    border: none;
+}
+.shopping-list-link:not(:last-child) {
+    width: 48px;
+    height: 48px;
+}
+.image-truck {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding-top: 8px;
+    margin-right: 20px;
+}
+.truck {
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2.286;
+    margin: 0 auto;
+    padding-top: 9px;
+    }
+.shopping-list-item:hover {
+    background-color: rgb( 26, 188, 156 );
+}
+.footer {
+    height: 90px;
+    margin: 0 auto;
+    background-color: rgb( 50, 50, 50 );
+    text-align: center;
+}
+.footer-container {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+.footer-text {
+    display: inline-block;
+    float: left;
+}
+.footer-link {
+    text-decoration-color: rgb( 26, 188, 156 );
 }
