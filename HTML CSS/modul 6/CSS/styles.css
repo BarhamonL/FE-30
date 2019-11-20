@@ -270,5 +270,12 @@ input::placeholder {
     font-style: italic;
     line-height: 1.6;
 }
-
-  
+.form__input:focus {
+    outline: none;
+}
+.form__input:required:focus:valid {
+    border-color: green;
+}
+.form__input:required:focus:invalid {
+    border-color: red;
+}
