@@ -102,10 +102,9 @@ h2::after {
     flex-wrap: wrap;
 }
 .services__list-item {
-    display: block;
+    display: flex;
     width: 340px;
     min-height: 170px;
-    display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 }
@@ -247,7 +246,7 @@ h5 {
     width: 150px;
     height: 40px;
     font-size: 14px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: rgb( 255, 255, 255 );
@@ -255,21 +254,21 @@ h5 {
 .form {
     padding-top: 10px;
 }
-.label {
+.form__input {
     width: 232px;
     height: 40px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb( 231, 231, 231 );
     background-color: rgb( 255, 255, 255 );
-    background-image: url(../image/Your-Email..png);
-    background-position: 12px;
-    background-repeat: no-repeat;
+    padding-left: 12px;
 }
-.label:hover {
-    background-image: none;
+input::placeholder {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb( 204, 204, 204 );
+    font-style: italic;
+    line-height: 1.6;
 }
-.label:focus {
-    background-image: none;    
-}
- 
+
+  
