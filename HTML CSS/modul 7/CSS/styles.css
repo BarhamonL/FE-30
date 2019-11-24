@@ -1,0 +1,271 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-slab-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v10-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v10-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* pt-serif-regular - latin_cyrillic */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Serif'), local('PTSerif-Regular'),
+         url('../fonts/pt-serif-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-serif-v11-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.body {
+    width: 87.5rem;
+    margin: 0 auto;
+}
+.container {
+    width: 58.75rem;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* header */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.75rem;
+    margin-bottom: 7.125rem;
+}
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 30rem;
+    font-size: 0.875rem;
+    font-family: "Montserrat";
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;  
+    line-height: 2.129;
+}
+.header__list-link {
+    color: rgb( 140, 140, 140 );    
+}
+.header__list-link:hover {
+    color: rgb(255, 240, 188 );
+}
+
+/* services */
+
+.services-title {
+    font-size: 2.5rem;
+    font-family: "Montserrat";
+    color: rgb( 34, 34, 34 );
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.875;
+    text-align: center;
+}
+.services-text {
+    font-size: 1rem;
+    font-family: "PT Serif";
+    color: rgb( 119, 119, 119 );
+    font-style: italic;
+    text-align: center;
+}
+.services__list {
+    display: flex;
+    justify-content: space-between;
+}
+.services__list-item {
+    width: 17.125rem;
+}
+.services__list-item::before {
+    display: block;
+    content: "";
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb( 254, 209, 54 );
+    border-radius: 50%;
+    background-color: rgb( 255, 255, 255 );
+    width: 4.5rem;
+    height: 4.4375rem;
+    background-image: url(../image/Icon-Basket.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 5rem; 
+}
+.services__list-item:nth-child(2)::before {
+    background-image: url(../image/Icon-Laptop.png);
+}  
+.services__list-item:last-child::before {
+    background-image: url(../image/Icon-Locked-.png);
+}
+.services__list-title {
+    font-size: 1.125rem;
+    font-family: "Montserrat";
+    color: rgb( 34, 34, 34 );
+    font-weight: bold;
+    line-height: 4.167;
+    text-align: center;
+}
+.services__list-text {
+    font-size: 0.875rem;
+    font-family: "RobotoSlab";
+    color: rgb( 119, 119, 119 );
+    text-align: center;
+    margin-bottom: 7.5rem;
+    letter-spacing: 0.05em;
+}
+
+/* footer */
+
+.footer {
+    min-height: 42.5rem;
+    width: 87.5rem;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb( 34, 34, 34 );
+}
+.footer__container {
+    margin: 0 auto;
+    position: absolute;
+    background-color: rgb( 34, 34, 34 );
+    background-image: url(../image/Map-Image.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    min-height: 41.25rem;
+    width: 87.5rem;
+}
+.contact_title {
+    font-size: 2.5rem;
+    font-family: "Montserrat";
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 1.4375rem;
+}
+.contact-text {
+    font-size: 1rem;
+    font-family: "PT Serif";
+    color: rgb( 119, 119, 119 );
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 4.6875rem;
+}
+/* form */
+
+.contact__form {
+    display: flex;
+    justify-content: space-between;
+    height: 13.375rem;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: rgb( 34, 34, 34 );
+}
+.input {
+    width: 28.6875rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 13.375rem;
+}
+.textarea {
+    width: 28.6875rem;
+    height: 13.375rem;      
+}
+.contact__form-input {
+    width: 28.6875rem;
+    height: 3.375rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb( 204, 204, 204 );
+    border-radius: 2px;
+    background-color: rgb( 255, 255, 255 );
+    padding-left: 1.25rem;
+    font-size: 0.875rem;
+    font-family: "Montserrat";
+    color: rgb( 187, 187, 187 );
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.contact__form-textarea {
+    resize: none;
+    width: 28.6875rem;
+    height: 13.375rem;
+    padding-top: 1.1875rem;
+    padding-left: 1.25rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb( 204, 204, 204 );
+    border-radius: 2px;
+    font-size: 0.875rem;
+    font-family: "Montserrat";
+    color: rgb( 187, 187, 187 );
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.contact__form-btn {
+    width: 15rem;
+    height: 4.125rem;
+    border-radius: 3px;
+    background-color: rgb( 254, 209, 54 );
+    margin: 0 auto;
+    margin-top: 1.875rem;
+    border: none;
+    font-size: 1.125rem;
+    font-family: "Montserrat";
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact__form-input:required:focus:valid {
+    outline: 2px solid green;
+}
+
+.contact__form-input:required:focus:invalid {
+    outline: 2px solid red;
+}
+.contact__form-textarea:required:focus:valid {
+    outline: 2px solid green;
+}
+
+.contact__form-textarea:required:focus:invalid {
+    outline: 2px solid red;
+}
+  
