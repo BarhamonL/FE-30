@@ -1,0 +1,351 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - cyrillic_latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-300 - cyrillic_latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-cyrillic_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-cyrillic_latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* header */
+
+.container {
+    width: 20rem;
+    margin: 0 auto;
+}
+.header {
+    min-height: 33.75rem;
+    background-image: url(../image/background-mob.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-header {
+    margin-bottom: 4.375rem;
+}
+.navigation {
+    width: 11.25rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 1.25rem;
+}
+.navigation-element:first-child {
+    order: 2;
+}
+.navigation-element:last-child {
+    margin-bottom: 7.25rem;
+}
+.navigation-element-item {
+    display: block;
+    width: 5.625rem;
+    height: 2.25rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb( 255, 255, 255 );
+    border-radius: 1.25rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0.4375rem;
+    background-color: rgba( 26, 25, 21, 0 );
+    }
+.navigation-element-item:first-child {
+    border: none;
+}    
+.navigation-element-link {
+    font-size: 0.875rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: rgb( 255, 255, 255 );
+    text-align: center;
+}
+.navigation-element-list {
+    display: flex; 
+    justify-content: space-between;
+}
+.logotype {
+    font-size: 1.25rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: rgb( 255, 255, 255 );
+    text-align: center;
+}
+h1 {
+    font-size: 1.875rem;
+    font-family: "Montserrat";
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+h4 {
+    font-size: 1.125rem;
+    font-family: "Roboto";
+    line-height: 1.25rem;
+    color: rgb( 255, 255, 255 );
+    text-align: center;
+    font-weight: 300;
+    display: block;
+    width: 13.75rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1.125rem;
+}
+.text-header {
+    display: block;
+    width: 17.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    background-color: rgb( 255, 78, 80 );
+    font-size: 0.875rem;
+    font-family: "Montserrat";
+    color: rgb( 255, 255, 255 );
+    line-height: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0.625rem;
+}  
+
+/* partner */
+
+.section-partner {
+    margin-top: 4.375rem;
+}
+h2 {
+    display: block;
+    width: 16.875rem;
+    font-size: 1.375rem;
+    font-family: "Montserrat";
+    color: rgb( 51, 51, 51 );
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0.0063rem;
+}
+.partner__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.partner__list-item {
+    margin: 0 auto;
+    margin-top: 1.25rem;
+}
+.partner__list-foto{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 3.125rem;
+}
+.partner__list-foto::after {
+    display: block;
+    content: "";
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb( 255, 255, 255 );
+    border-radius: 50%;
+    width: 2.3125rem;
+    height: 2.3125rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0rem;
+    left: 5rem;
+}
+.partner-names {
+    font-size: 0.875rem;
+    font-family: "Montserrat";
+    color: rgb( 51, 51, 51 );
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 0.9375rem;
+    
+}
+.partner-hobbies {
+    display: block;
+    width: 13.75rem;
+    font-size: 0.875rem;
+    font-family: "Roboto";
+    color: rgb( 102, 102, 102 );
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0.0063rem;
+}
+.partner__list-foto.tv:after {
+    background-color: rgb( 255, 78, 80 );
+    background-image: url(../image/TV.png);
+} 
+.partner__list-foto.cup::after {
+    background-color: rgb( 28, 215, 173 );
+    background-image: url(../image/cup.png);
+}
+.partner__list-foto.kolba::after {
+    background-color: rgb( 255, 165, 7 );
+    background-image: url(../image/kolba.png);
+}
+.partner__list-foto.fly::after {
+    background-color: rgb( 78, 115, 219 );
+    background-image: url(../image/fly.png);   
+}
+.other {
+    margin-top: 1.75rem;
+    margin-bottom: 3.625rem;
+}
+.button {
+    display: block;
+    font-size: 0.875rem;
+    font-family: "Montserrat";
+    color: rgb( 255, 78, 80 );
+    font-weight: bold;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb( 255, 78, 80 );
+    border-radius: 1.25rem;
+    background-color: rgb( 255, 255, 255 );
+    width: 17.375rem;
+    height: 2.375rem;
+    margin: 0 auto;
+}   
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        width: 48rem;
+    }
+    .header {
+        min-height: 43.75rem;
+        background-image: url(../image/background-tab.png);
+    }
+    .navigation {
+        width: 41.875rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-top: 2.5rem;
+    }
+    .navigation-element:first-child {
+        margin-bottom: 8.4375rem;
+    }
+    .navigation-element:last-child {
+        margin-bottom: 8.4375rem;
+    }
+    h1 {
+        width: 31.875rem;
+        margin: 0 auto;
+        font-size: 3.25rem;
+        line-height: 4.0625rem;
+        letter-spacing: 0.0063rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        width: 26.25rem;
+        margin-bottom: 2.125rem;
+        margin-top: 1.5rem;
+    }
+    .text-header {
+        width: 14.125rem;
+    } 
+    h2 {
+        display: block;
+        width: 26.25rem;
+    }
+    .partner__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 30rem;
+    }
+    .partner__list-item:nth-child(2) {
+        order: 1;
+    }
+    .partner__list-item:last-child {
+        order: 2;
+    }
+    .partner__list-item {
+        margin-top: 1.875rem;
+    }
+    .partner__list-item:nth-child(2n+1) {
+        margin-bottom: 1.5625rem;
+    }
+    .partner__list-foto{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        margin-left: 3.125rem;
+    } 
+    .other {
+        margin-top: 2.3125rem;
+        margin-bottom: 2.5rem;
+    }
+    .button {
+        width: 11.875rem;
+        height: 2.375rem;
+    }    
+}
+
+/* desktop */
+
+@media (min-width: 1440px) {
+    .container {
+        width: 90rem;
+    }
+    .header {
+        background-image: url(../image/background-pc.png);
+    }
+    .navigation {
+        width: 58.75rem;
+    }
+    .navigation-element:first-child {
+        margin-bottom: 8.9375rem;
+    }
+    .navigation-element:last-child {
+        margin-bottom: 8.9375rem;
+    }
+    .partner__list {
+        width: 57.5rem;
+    }
+    .other {
+        margin-bottom: 4.6875rem;
+    }
+ }
+
+  
