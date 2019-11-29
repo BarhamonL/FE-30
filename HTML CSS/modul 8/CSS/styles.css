@@ -55,7 +55,7 @@ img {
     background-image: url(../image/background-mob.png);
     background-position: center;
     background-repeat: no-repeat;
-    width: 767px;
+    width: 47.9375rem;
 }
 .section-header {
     margin-bottom: 4.375rem;
@@ -109,7 +109,7 @@ img {
 }
 h1 {
     display: block;
-    width: 300px;
+    width: 18.75rem;
     font-size: 1.875rem;
     font-family: "Montserrat";
     color: rgb( 255, 255, 255 );
@@ -149,22 +149,13 @@ h4 {
     padding-top: 0.625rem;
 }  
 
-/* partner 
-.header {
-    min-height: 33.75rem;
-    background-image: url(../image/background-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 767px;
-}
-*/
-
+/* partner */
 
 .section-partner {
     margin-top: 4.375rem;
     background-position: center;
     background-repeat: no-repeat;
-    width: 767px;
+    width: 47.9375rem;
 }
 h2 {
     display: block;
@@ -248,7 +239,7 @@ h2 {
     margin-bottom: 3.625rem;
     background-position: center;
     background-repeat: no-repeat;
-    width: 767px;
+    width: 47.9375rem;
 }
 .button {
     display: block;
