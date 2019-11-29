@@ -48,12 +48,14 @@ img {
 .container {
     width: 20rem;
     margin: 0 auto;
+    background-size: cover;
 }
 .header {
     min-height: 33.75rem;
     background-image: url(../image/background-mob.png);
     background-position: center;
     background-repeat: no-repeat;
+    width: 767px;
 }
 .section-header {
     margin-bottom: 4.375rem;
@@ -106,12 +108,15 @@ img {
     text-align: center;
 }
 h1 {
+    display: block;
+    width: 300px;
     font-size: 1.875rem;
     font-family: "Montserrat";
     color: rgb( 255, 255, 255 );
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
 }
@@ -144,10 +149,22 @@ h4 {
     padding-top: 0.625rem;
 }  
 
-/* partner */
+/* partner 
+.header {
+    min-height: 33.75rem;
+    background-image: url(../image/background-mob.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 767px;
+}
+*/
+
 
 .section-partner {
     margin-top: 4.375rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 767px;
 }
 h2 {
     display: block;
@@ -229,6 +246,9 @@ h2 {
 .other {
     margin-top: 1.75rem;
     margin-bottom: 3.625rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 767px;
 }
 .button {
     display: block;
@@ -254,6 +274,7 @@ h2 {
     .header {
         min-height: 43.75rem;
         background-image: url(../image/background-tab.png);
+        width: 59.9375rem;
     }
     .navigation {
         width: 41.875rem;
@@ -284,6 +305,9 @@ h2 {
     }
     .text-header {
         width: 14.125rem;
+    }
+    .section-partner {
+        width: 59.9375rem;    
     } 
     h2 {
         display: block;
@@ -315,6 +339,7 @@ h2 {
     .other {
         margin-top: 2.3125rem;
         margin-bottom: 2.5rem;
+        width: 59.9375rem;
     }
     .button {
         width: 11.875rem;
@@ -324,12 +349,13 @@ h2 {
 
 /* desktop */
 
-@media (min-width: 1440px) {
+@media (min-width: 960px) {
     .container {
-        width: 90rem;
+        min-width: 58.75rem;
     }
     .header {
         background-image: url(../image/background-pc.png);
+        width: 90rem;
     }
     .navigation {
         width: 58.75rem;
@@ -340,11 +366,15 @@ h2 {
     .navigation-element:last-child {
         margin-bottom: 8.9375rem;
     }
-    .partner__list {
+    .section-partner {
+        width: 90rem;    
+    } 
+        .partner__list {
         width: 57.5rem;
     }
     .other {
         margin-bottom: 4.6875rem;
+        width: 90rem;  
     }
  }
 
