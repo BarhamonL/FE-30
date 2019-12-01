@@ -55,7 +55,8 @@ img {
     background-image: url(../image/background-mob.png);
     background-position: center;
     background-repeat: no-repeat;
-    width: 47.9375rem;
+    min-width: 20rem;
+    max-width: 47.9375rem;
 }
 .section-header {
     margin-bottom: 4.375rem;
@@ -67,6 +68,10 @@ img {
     margin: 0 auto;
     padding-top: 1.25rem;
 }
+.navigation-element-list {
+    display: flex; 
+    justify-content: space-between;
+}
 .navigation-element:first-child {
     order: 2;
 }
@@ -77,33 +82,29 @@ img {
     display: block;
     width: 5.625rem;
     height: 2.25rem;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb( 255, 255, 255 );
-    border-radius: 1.25rem;
     text-align: center;
     margin: 0 auto;
     padding-top: 0.4375rem;
     background-color: rgba( 26, 25, 21, 0 );
-    }
-.navigation-element-item:first-child {
-    border: none;
+}
+.navigation-element-item:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb( 255, 255, 255 );
+    border-radius: 1.25rem;
+
 }    
 .navigation-element-link {
     font-size: 0.875rem;
     font-family: "Montserrat";
-    font-weight: 700;
+    font-weight: bold;
     color: rgb( 255, 255, 255 );
     text-align: center;
-}
-.navigation-element-list {
-    display: flex; 
-    justify-content: space-between;
 }
 .logotype {
     font-size: 1.25rem;
     font-family: "Montserrat";
-    font-weight: 700;
+    font-weight: bold;
     color: rgb( 255, 255, 255 );
     text-align: center;
 }
@@ -155,7 +156,8 @@ h4 {
     margin-top: 4.375rem;
     background-position: center;
     background-repeat: no-repeat;
-    width: 47.9375rem;
+    min-width: 20rem;
+    max-width: 47.9375rem;
 }
 h2 {
     display: block;
@@ -213,6 +215,7 @@ h2 {
     width: 13.75rem;
     font-size: 0.875rem;
     font-family: "Roboto";
+    font-weight: 300;
     color: rgb( 102, 102, 102 );
     text-align: center;
     margin: 0 auto;
@@ -239,7 +242,8 @@ h2 {
     margin-bottom: 3.625rem;
     background-position: center;
     background-repeat: no-repeat;
-    width: 47.9375rem;
+    min-width: 20rem;
+    max-width: 47.9375rem;
 }
 .button {
     display: block;
@@ -265,7 +269,8 @@ h2 {
     .header {
         min-height: 43.75rem;
         background-image: url(../image/background-tab.png);
-        width: 59.9375rem;
+        min-width: 48rem;
+        max-width: 59.9375rem;
     }
     .navigation {
         width: 41.875rem;
@@ -298,7 +303,8 @@ h2 {
         width: 14.125rem;
     }
     .section-partner {
-        width: 59.9375rem;    
+        min-width: 48rem;
+        max-width: 59.9375rem;    
     } 
     h2 {
         display: block;
@@ -330,7 +336,8 @@ h2 {
     .other {
         margin-top: 2.3125rem;
         margin-bottom: 2.5rem;
-        width: 59.9375rem;
+        min-width: 48rem;
+        max-width: 59.9375rem;
     }
     .button {
         width: 11.875rem;
@@ -346,7 +353,8 @@ h2 {
     }
     .header {
         background-image: url(../image/background-pc.png);
-        width: 90rem;
+        min-width: 60rem;
+        max-width: 90rem;
     }
     .navigation {
         width: 58.75rem;
@@ -358,14 +366,16 @@ h2 {
         margin-bottom: 8.9375rem;
     }
     .section-partner {
-        width: 90rem;    
+        min-width: 60rem;
+        max-width: 90rem;    
     } 
         .partner__list {
         width: 57.5rem;
     }
     .other {
         margin-bottom: 4.6875rem;
-        width: 90rem;  
+        min-width: 60rem;
+        max-width: 90rem;  
     }
  }
 
