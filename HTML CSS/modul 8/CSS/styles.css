@@ -46,7 +46,7 @@ img {
 /* header */
 
 .container {
-    width: 20rem;
+    min-width: 20rem;
     margin: 0 auto;
     background-size: cover;
 }
@@ -237,6 +237,9 @@ h2 {
     background-color: rgb( 78, 115, 219 );
     background-image: url(../image/fly.png);   
 }
+
+/* footer*/
+
 .other {
     margin-top: 1.75rem;
     margin-bottom: 3.625rem;
@@ -264,7 +267,7 @@ h2 {
 /* tablet */
 @media (min-width: 768px) {
     .container {
-        width: 48rem;
+        min-width: 48rem;
     }
     .header {
         min-height: 43.75rem;
