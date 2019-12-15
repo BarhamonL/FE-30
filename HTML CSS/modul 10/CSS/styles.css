@@ -81,9 +81,12 @@ header {
     width: 120rem;
     min-height: 70.875rem;
     margin: 0 auto;
+    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background.png);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background.png);
     background-image: -ms-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navigation {
@@ -502,6 +505,8 @@ h3 {
  (-o-min-device-pixel-ratio: 2/1),
  (min-resolution: 192dpi) {
      header {
-         background-image: -ms-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background@2x.png);
+    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background@2x.png);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background@2x.png);
+    background-image: -ms-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background@2x.png);
      }
- }
+ }  
