@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 /* roboto-300italic - cyrillic_latin */
 @font-face {
     font-family: 'Roboto';
@@ -50,7 +52,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 ul, ol {
     list-style: none;
@@ -68,45 +71,51 @@ img {
 }
 
 .container {
-    width: 1210px;
+    width: 75.625rem;
     margin: 0 auto;
     background-size: cover;
 }
 /* header */
 
 header {
-    width: 1920px;
-    min-height: 1134px;
+    width: 120rem;
+    min-height: 70.875rem;
     margin: 0 auto;
-    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background.png);
-    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background.png);
     background-image: -ms-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .navigation {
-    width: 1210px;
+    width: 75.625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
-    padding-top: 20px;
-    margin-bottom: 170px;
+    padding-top: 1.25rem;
+    margin-bottom: 10.625rem;
 }
 .navigation__list {
-    width: 620px;
+    width: 38.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .navigation__list-item:nth-child(-n+5) {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "Montserrat";
     color: rgb( 255, 255, 255 );
     text-transform: uppercase;
 }
 .navigation__list-svg {
-    width: 18px;
-    height: 18px;
+    width: 1.125rem;
+    height: 1.125rem;
     fill: rgb( 255, 255, 255 );
 }
 .navigation__list-item {
@@ -115,23 +124,29 @@ header {
 .navigation__list-item::after {
     display: block;
     content: "";
-    width: 50px;
-    height: 3px;
-    transform: translateX(-50%);
+    width: 3.125rem;
+    height: 0.1875rem;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     left: 50%;
     background-color: rgb( 252, 227, 138 );
     position: absolute; 
-    margin-top: 12px;
+    margin-top: 0.75rem;
     visibility: hidden; 
     opacity: 0;  
 }
 .navigation__list-item:hover.navigation__list-item::after {
     visibility: visible;
     opacity: 1;
+    -webkit-transition: color .4s linear;
+    -o-transition: color .4s linear;
     transition: color .4s linear;
 }
 .navigation__list-item:hover {
     color: rgb( 252, 227, 138 );
+    -webkit-transition: color .2s linear;
+    -o-transition: color .2s linear;
     transition: color .2s linear;
 }
 .navigation__list-item:hover svg {
@@ -139,26 +154,26 @@ header {
 }  
 h4 {
     display: block;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-family: "Kaushan Script";
     color: rgb( 255, 255, 255 );
     text-align: center;
-    width: 510px;
+    width: 31.875rem;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 h1 {
     display: block;
-    font-size: 150px;
+    font-size: 9.375rem;
     font-family: "Montserrat";
     color: rgb( 255, 255, 255 );
     font-weight: bold;
     text-transform: uppercase;
     line-height: 0.933;
     text-align: center;
-    width: 805px;
+    width: 50.3125rem;
     margin: 0 auto;
-    margin-bottom: 125px;
+    margin-bottom: 7.8125rem;
 }
 button {
     display: block;
@@ -166,9 +181,9 @@ button {
     border-width: 3px;
     border-color: rgb( 255, 255, 255 );
     background-color: rgba( 0, 0, 0, 0 );
-    width: 158px;
-    height: 38px;
-    font-size: 14px;
+    width: 9.875rem;
+    height: 2.375rem;
+    font-size: 0.875rem;
     font-family: "Montserrat";
     color: rgb( 255, 255, 255 );
     font-weight: bold;
@@ -179,15 +194,15 @@ button {
 /* services */
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Kaushan Script";
     color: rgb( 51, 51, 51 );
     text-align: center;
-    margin-top: 45px; 
-    margin-bottom: 20px;
+    margin-top: 2.8125rem; 
+    margin-bottom: 1.25rem;
  }
  h2 {
-     font-size: 30px;
+     font-size: 1.875rem;
      font-family: "Montserrat", sans-serif;
      color: rgb( 51, 51, 51 );
      font-weight: bold;
@@ -197,54 +212,70 @@ h3 {
  h2::after {
      display: block;
      content: "";
-     width: 60px;
-     height: 3px;
+     width: 3.75rem;
+     height: 0.1875rem;
      margin: 0 auto;
      background-color: rgb( 243, 129, 129 );
-     margin-top: 40px;
-     margin-bottom: 40px;
+     margin-top: 2.5rem;
+     margin-bottom: 2.5rem;
  }
  .services__list {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     margin-top: 25px;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
+     margin-top: 1.5625rem;
  }
  .services__list-item {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     width: 340px;
-     min-height: 160px;
-     flex-wrap: wrap;
-     align-content: flex-start;
+     width: 21.25rem;
+     min-height: 10rem;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
+     -ms-flex-line-pack: start;
+         align-content: flex-start;
  }
  .services__list-item:nth-child(3n+1) {
-     margin-left: 30px;
+     margin-left: 1.875rem;
  }
  .services__list-item:nth-child(-n+3) {
-     margin-bottom: 10px;
+     margin-bottom: 0.625rem;
  }
  .services__list-item-img {
-     height: 31px;
-     margin-top: 30px;
+     height: 1.9375rem;
+     margin-top: 1.875rem;
  }
  .services__list-text {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     width: 285px;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-pack: start;
+         -ms-flex-pack: start;
+             justify-content: flex-start;
+     width: 17.8125rem;
      
  }
  .services__name {
-     font-size: 14px;
+     font-size: 0.875rem;
      font-family: "Montserrat";
      color: rgb( 51, 51, 51 );
      text-transform: uppercase;
      text-align: start;
-     margin-left: 30px;
+     margin-left: 1.875rem;
  }
  .services__description {
-     margin-left: 30px;
-     font-size: 15px;
+     margin-left: 1.875rem;
+     font-size: 0.9375rem;
      font-family: "Roboto";
      color: rgb( 153, 153, 153 );
      line-height: 1.6;
@@ -253,140 +284,205 @@ h3 {
    
  /* team */
  .team {
-     min-height: 915px;
+     min-height: 57.1875rem;
  }
  
  .team-description {
-     font-size: 15px;
+     font-size: 0.9375rem;
      font-family: "Roboto";
      color: rgb( 153, 153, 153 );
      line-height: 1.6;
      text-align: center;
-     margin-left: 130px;
-     margin-right: 130px;
-     margin-bottom: 94px;
+     margin-left: 8.125rem;
+     margin-right: 8.125rem;
+     margin-bottom: 5.875rem;
  }
  .team__list {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: space-between;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
      position: relative;
  }
  .overlay {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
-     justify-content: space-between;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
      position: absolute;
      top: 0;
      left: 0;
-     width: 380px;
-     height: 470px;
+     width: 23.75rem;
+     height: 29.375rem;
      background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138, .9) 0%, rgba(243,129,129, .9) 100%);
      opacity: 0;
      visibility: hidden;
+     -webkit-transition: all .2s linear;
+     -o-transition: all .2s linear;
      transition: all .2s linear;
  }
  .social__list {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: center;
-     margin-top: 207px;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     margin-top: 12.9375rem;
  }
  .social__list-item {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     width: 56px;
-     height: 56px;
-     justify-content: center;
-     align-items: center;
+     width: 3.5rem;
+     height: 3.5rem;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
      background-color: rgb( 252, 227, 138 );
-     margin-right: 2px;
+     margin-right: 0.125rem;
  }
  .icon {
-     width: 26px;
-     height: 22px;
+     width: 1.625rem;
+     height: 1.375rem;
      fill: rgb( 243, 129, 129 );
  }
 
  .social__list-item:hover {
      background-color: rgb( 243, 129, 129 );
-     box-shadow: 2px 0px rgb( 243, 129, 129 );
+     -webkit-box-shadow: 0.125rem 0px rgb( 243, 129, 129 );
+             box-shadow: 0.125rem 0px rgb( 243, 129, 129 );
+     -webkit-transition: all .2s linear;
+     -o-transition: all .2s linear;
      transition: all .2s linear;
  }
  .social__list-item:hover svg {
     fill: white;
 }
  h5 {
-     font-size: 14px;
+     font-size: 0.875rem;
      font-family: "Montserrat", sans-serif;
      color: rgb( 51, 51, 51 );
      text-transform: uppercase;
      text-align: center;
-     margin-top: 28px;
-     margin-bottom: 12px;  
+     margin-top: 1.75rem;
+     margin-bottom: 0.75rem;  
  }
  .team__list-item {
      position: relative;
+     width: 23.75rem;
+     height: 40.1875rem;
  }
  .profession {
-     font-size: 15px;
+     font-size: 0.9375rem;
      font-family: "Roboto";
      color: rgb( 153, 153, 153 );
      font-style: italic;
      line-height: 1.6;
      text-align: center;
-     margin-bottom: 85px;
+     margin-bottom: 5.3125rem;
  }
  .team__list-item:hover .overlay {
      opacity: 1; 
      visibility: visible;
-     box-shadow: 10px 10px rgb(149, 225, 211 );
-     top: -10px;
-     left: -10px;
+     -webkit-box-shadow: 0.625rem 0.625rem rgb(149, 225, 211 );
+             box-shadow: 0.625rem 0.625rem rgb(149, 225, 211 );
+     top: -0.625rem;
+     left: -0.625rem;
+     -webkit-transition: all .2s linear;
+     -o-transition: all .2s linear;
      transition: all .2s linear;
  }
  
  /* footer */
  
  .footer {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: space-between;
-     min-height: 64px;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
+     min-height: 4rem;
  }
  .footer__text {
-     font-size: 14px;
+     font-size: 0.875rem;
      font-family: "Montserrat", sans-serif;
      color: rgb( 51, 51, 51 );   
-     padding-top: 24px;
+     padding-top: 1.5rem;
  }
  .footer__link {
-     font-size: 14px;
+     font-size: 0.875rem;
      font-family: "Montserrat", sans-serif;
      color: rgb( 253, 190, 190 );
  }
  .subscribe {
      background-color: rgb( 149, 225, 211 );
      border: none;
-     width: 150px;
-     height: 40px;
-     font-size: 14px;
+     width: 9.375rem;
+     height: 2.5rem;
+     font-size: 0.875rem;
      font-family: "Montserrat", sans-serif;
      text-transform: uppercase;
      text-align: center;
      color: rgb( 255, 255, 255 );
  }
  .form {
-     padding-top: 10px;
+     padding-top: 0.625rem;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
  }
  .form__input {
-     width: 230px;
-     height: 40px;
+     width: 14.375rem;
+     height: 2.5rem;
      border-style: solid;
      border-width: 1px;
      border-color: rgb( 231, 231, 231 );
      background-color: rgb( 255, 255, 255 );
-     padding-left: 12px;
+     padding-left: 0.75rem;
+ }
+ input::-webkit-input-placeholder {
+     font-size: 0.9375rem;
+     font-family: "Roboto";
+     color: rgb( 204, 204, 204 );
+     font-style: italic;
+     line-height: 1.6;
+ }
+ input::-moz-placeholder {
+     font-size: 0.9375rem;
+     font-family: "Roboto";
+     color: rgb( 204, 204, 204 );
+     font-style: italic;
+     line-height: 1.6;
+ }
+ input:-ms-input-placeholder {
+     font-size: 0.9375rem;
+     font-family: "Roboto";
+     color: rgb( 204, 204, 204 );
+     font-style: italic;
+     line-height: 1.6;
+ }
+ input::-ms-input-placeholder {
+     font-size: 0.9375rem;
+     font-family: "Roboto";
+     color: rgb( 204, 204, 204 );
+     font-style: italic;
+     line-height: 1.6;
  }
  input::placeholder {
-     font-size: 15px;
+     font-size: 0.9375rem;
      font-family: "Roboto";
      color: rgb( 204, 204, 204 );
      font-style: italic;
@@ -406,9 +502,6 @@ h3 {
  (-o-min-device-pixel-ratio: 2/1),
  (min-resolution: 192dpi) {
      header {
-         background-image: -moz-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background@2x.png);
-         background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background@2x.png);
          background-image: -ms-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129, 0.9) 100%), url(../image/background@2x.png);
- 
+     }
  }
- 
