@@ -1,0 +1,120 @@
+/* team */
+.team {
+    min-height: 57.1875rem;
+    &__description {
+        @include font($third-font, 0.9375rem, 400, 1.6);
+        color: $main-description-color;
+        text-align: center;
+        margin-left: 8.125rem;
+        margin-right: 8.125rem;
+        margin-bottom: 5.875rem;
+    }
+    &__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        position: relative;
+        &--item {
+            position: relative;
+            width: 23.75rem;
+            height: 40.1875rem;
+            &-photo {
+                width: 380px;
+                height: 470px;
+            }
+        }
+    }
+}
+.overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 470px;
+    background-image: -webkit-linear-gradient($main-linear-gradient);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 215px;
+    &--item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 3.5rem;
+        height: 3.5rem;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: $header-hover-color;
+        margin-right: 0.125rem;
+        &:hover {
+            background-color: $icon-color;
+            -webkit-box-shadow: 0.125rem 0px $icon-color;
+                    box-shadow: 0.125rem 0px $icon-color;
+            -webkit-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear;
+            & svg {
+               fill: white;
+            }
+        }
+    }
+}
+.icon {
+    width: 1.625rem;
+    height: 1.375rem;
+    fill: $icon-color;
+}
+
+h5 {
+    @extend %uppercase;
+    font-family: $first-font;
+    color: $main-title-color;
+    text-align: center;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;  
+}
+.profession {
+    @include font($third-font, 0.9375rem, 400, 1.6)
+    color: $main-description-color;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 5.3125rem;
+}
+.team__list--item:hover .overlay {
+    opacity: 1; 
+    visibility: visible;
+    -webkit-box-shadow: 0.625rem 0.625rem $box-shadow-color;
+            box-shadow: 0.625rem 0.625rem $box-shadow-color;
+    top: -0.625rem;
+    left: -0.625rem;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}

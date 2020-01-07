@@ -110,21 +110,21 @@ header {
             justify-content: space-between;
     align-items: center;
 }
-.navigation__list-link {
+.navigation__list--link {
     font-size: 0.875rem;
     font-family: "Montserrat";
     color: rgb( 255, 255, 255 );
     text-transform: uppercase;
 }
-.navigation__list-svg {
+.navigation__list--svg {
     width: 1.125rem;
     height: 1.125rem;
     fill: rgb( 255, 255, 255 );
 }
-.navigation__list-item {
+.navigation__list--item {
     position: relative;
 }
-.navigation__list-item::after {
+.navigation__list--item::after {
     display: block;
     content: "";
     width: 100%;
@@ -139,26 +139,26 @@ header {
     visibility: hidden; 
     opacity: 0;  
 }
-.navigation__list-item:hover.navigation__list-item::after {
+.navigation__list--item:hover.navigation__list--item::after {
     visibility: visible;
     opacity: 1;
     -webkit-transition: color .4s linear;
     -o-transition: color .4s linear;
     transition: color .4s linear;
 }
-.navigation__list-item:hover {
+.navigation__list--item:hover {
     color: rgb( 252, 227, 138 );
     -webkit-transition: color .2s linear;
     -o-transition: color .2s linear;
     transition: color .2s linear;
 }
-.navigation__list-link:hover {
+.navigation__list--link:hover {
     color: rgb( 252, 227, 138 );
     -webkit-transition: color .2s linear;
     -o-transition: color .2s linear;
     transition: color .2s linear;
 }
-.navigation__list-item:hover svg {
+.navigation__list--item:hover svg {
     fill: rgb( 252, 227, 138 );
 }  
 h4 {
@@ -240,7 +240,7 @@ h3 {
          flex-wrap: wrap;
      margin-top: 1.5625rem;
  }
- .services__list-item {
+ .services__list--item {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
@@ -251,17 +251,17 @@ h3 {
      -ms-flex-line-pack: start;
          align-content: flex-start;
  }
- .services__list-item:nth-child(3n+1) {
+ .services__list--item:nth-child(3n+1) {
      margin-left: 1.875rem;
  }
- .services__list-item:nth-child(-n+3) {
+ .services__list--item:nth-child(-n+3) {
      margin-bottom: 0.625rem;
  }
- .services__list-item-img {
+ .services__list--item-img {
      height: 1.9375rem;
      margin-top: 1.875rem;
  }
- .services__list-text {
+ .services__list--text {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
@@ -297,7 +297,7 @@ h3 {
      min-height: 57.1875rem;
  }
  
- .team-description {
+ .team__description {
      font-size: 0.9375rem;
      font-family: "Roboto";
      color: rgb( 153, 153, 153 );
@@ -316,7 +316,7 @@ h3 {
              justify-content: space-between;
      position: relative;
  }
- .team__list-item-photo {
+ .team__list--item-photo {
      width: 380px;
      height: 470px;
  }
@@ -352,7 +352,7 @@ h3 {
              justify-content: center;
      margin-top: 215px;
  }
- .social__list-item {
+ .social__list--item {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
@@ -373,7 +373,7 @@ h3 {
      fill: rgb( 243, 129, 129 );
  }
 
- .social__list-item:hover {
+ .social__list--item:hover {
      background-color: rgb( 243, 129, 129 );
      -webkit-box-shadow: 0.125rem 0px rgb( 243, 129, 129 );
              box-shadow: 0.125rem 0px rgb( 243, 129, 129 );
@@ -381,7 +381,7 @@ h3 {
      -o-transition: all .2s linear;
      transition: all .2s linear;
  }
- .social__list-item:hover svg {
+ .social__list--item:hover svg {
     fill: white;
 }
  h5 {
@@ -393,7 +393,7 @@ h3 {
      margin-top: 1.75rem;
      margin-bottom: 0.75rem;  
  }
- .team__list-item {
+ .team__list--item {
      position: relative;
      width: 23.75rem;
      height: 40.1875rem;
@@ -407,7 +407,7 @@ h3 {
      text-align: center;
      margin-bottom: 5.3125rem;
  }
- .team__list-item:hover .overlay {
+ .team__list--item:hover .overlay {
      opacity: 1; 
      visibility: visible;
      -webkit-box-shadow: 0.625rem 0.625rem rgb(149, 225, 211 );
