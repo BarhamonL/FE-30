@@ -11,23 +11,30 @@ const priceIndia = 80;
 const priceJamaica = 120;
 const userChoice = prompt('Укажите название страны');
 let message;
-switch (userChoice.toLowerCase()) {
-  case nameChina.toLowerCase():
-    message = `Доставка в ${nameChina} будет стоить ${priceChina} кредитов`;
-    break;
-  case nameChile.toLowerCase():
-    message = `Доставка в ${nameChile} будет стоить ${priceChile} кредитов`;
-    break;
-  case nameAustralia.toLowerCase():
-    message = `Доставка в ${nameAustralia} будет стоить ${priceAustralia} кредитов`;
-    break;
-  case nameIndia.toLowerCase():
-    message = `Доставка в ${nameIndia} будет стоить ${priceIndia} кредитов`;
-    break;
-  case nameJamaica.toLowerCase():
-    message = `Доставка в ${nameJamaica} будет стоить ${priceJamaica} кредитов`;
-    break;
-  default:
-    alert((message = `В вашей стране доставка не доступна`));
+
+if (userChoice === null) {
+  message = `вы отменили заказ`;
+} else {
+  switch (userChoice.toLowerCase()) {
+    case nameChina.toLowerCase():
+      message = `Доставка в ${nameChina} будет стоить ${priceChina} кредитов`;
+      break;
+    case nameChile.toLowerCase():
+      message = `Доставка в ${nameChile} будет стоить ${priceChile} кредитов`;
+      break;
+    case nameAustralia.toLowerCase():
+      message = `Доставка в ${nameAustralia} будет стоить ${priceAustralia} кредитов`;
+      break;
+    case nameIndia.toLowerCase():
+      message = `Доставка в ${nameIndia} будет стоить ${priceIndia} кредитов`;
+      break;
+    case nameJamaica.toLowerCase():
+      message = `Доставка в ${nameJamaica} будет стоить ${priceJamaica} кредитов`;
+      break;
+    default:
+      message = `В вашей стране доставка не доступна`;
+  }
 }
+alert(message);
+
 console.log(message);
