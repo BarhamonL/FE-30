@@ -1,40 +1,49 @@
 'use strict';
-const nameChina = 'Китай';
-const nameChile = 'Чили';
-const nameAustralia = 'Австралия';
-const nameIndia = 'Индия';
-const nameJamaica = 'Ямайка';
-const priceChina = 100;
-const priceChile = 250;
-const priceAustralia = 170;
-const priceIndia = 80;
-const priceJamaica = 120;
-const userChoice = prompt('Укажите название страны');
-let message;
+const PRINT_COUNTRY =
+  'Напишите название страны в которую нужно доставить товар';
+const CANCEL_BY_USER = 'Отменено пользователем!';
+const NOT_DELIVERY = 'В вашей стране доставка не доступна';
+const CNINA = 'Китай';
+const AUSTRALIA = 'Австралия';
+const INDIA = 'Индия';
+const JAMAICA = 'Ямайка';
+const SOUTH_AMERICA = 'Южная америка';
 
-if (userChoice === null) {
-  message = `вы отменили заказ`;
+let message = prompt(PRINT_COUNTRY);
+let priсe = 0;
+let countryName;
+
+if (message === null) {
+  message = `отменено пользователем`;
 } else {
-  switch (userChoice.toLowerCase()) {
-    case nameChina.toLowerCase():
-      message = `Доставка в ${nameChina} будет стоить ${priceChina} кредитов`;
+  countryName = message[0].toUpperCase() + message.slice(1).toLowerCase();
+
+  switch (countryName) {
+    case CNINA:
+      priсe = 100;
       break;
-    case nameChile.toLowerCase():
-      message = `Доставка в ${nameChile} будет стоить ${priceChile} кредитов`;
+
+    case SOUTH_AMERICA:
+      priсe = 250;
       break;
-    case nameAustralia.toLowerCase():
-      message = `Доставка в ${nameAustralia} будет стоить ${priceAustralia} кредитов`;
+
+    case AUSTRALIA:
+      priсe = 170;
       break;
-    case nameIndia.toLowerCase():
-      message = `Доставка в ${nameIndia} будет стоить ${priceIndia} кредитов`;
+
+    case INDIA:
+      priсe = 80;
       break;
-    case nameJamaica.toLowerCase():
-      message = `Доставка в ${nameJamaica} будет стоить ${priceJamaica} кредитов`;
+    case JAMAICA:
+      priсe = 120;
       break;
     default:
-      message = `В вашей стране доставка не доступна`;
+      message = NOT_DELIVERY;
   }
 }
-alert(message);
 
-console.log(message);
+if (priсe > 0) {
+  const PRICE_DELIVERY = `Доставка в ${countryName} будет стоить ${priсe} кредитов`;
+  message = PRICE_DELIVERY;
+}
+alert(message);

@@ -13,3 +13,13 @@ if (input === null) {
     totalPrice} кредитов.`;
 }
 alert(message);
+
+const ghvfjjh = function(string) {
+  const dtyddty = string.length;
+  if (dtyddty > 40) {
+    String.slice(0, 40);
+    String.push('...');
+  }
+
+  return string;
+};
