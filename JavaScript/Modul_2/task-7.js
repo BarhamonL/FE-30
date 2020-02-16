@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Есть массив logins с логинами пользователей.
 // Напиши скрипт добавления логина в массив logins.
@@ -53,69 +53,65 @@
 // возвращает true или false.
 // addLogin добавляет или не добавляет логин в массив.
 // При этом для проверок условия добавления использует
-// результаты вызовов других функций - isLoginUnique и
-// isLoginValid.
+// // результаты вызовов других функций - isLoginUnique и
+// // isLoginValid.
 
-const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-
-const isLoginValid = function(login) {
-  if (login.length > 3 && login.length < 17) {
-    return true;
-  } else {
-    return false;
-  }
-};
-let LoginValid = isLoginValid.return;
-
-// console.log(isLoginValid("Poly1"));
-
-const isLoginUnique = function(Logins, login) {
-  if (logins.includes(login)) {
-    return false;
-  } else {
-    return true;
-  }
-};
-
-// console.log(isLoginUnique(logins, "Poly1"));
-
-const addLogin = function(allLogins, login) {
-  if (LoginValid !== true) {
-    message = `Ошибка! Логин должен быть от  4 до 16 символов`;
-    console.log(message);
-  }
-};
-console.log(isLoginValid("Pol"));
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
-// console.log(addLogin(logins, "Ajax")); // 'Логин успешно добавлен!'
-// console.log(addLogin(logins, "robotGoogles")); // 'Такой логин уже используется!'
-// console.log(addLogin(logins, "Zod")); // 'Ошибка! Логин должен быть от 4 до 16 символов'
-console.log(addLogin(logins, "jqueryisextremelyfast")); // 'Ошибка! Логин должен быть от 4 до 16 символов'
-
-// const printValue = function(value) {
-//   console.log(value);
-// };
-
-// const prettyPrint = function(value) {
-//   console.log("Logging value: ", value);
-// };
-
-// const repeat = function(n, action) {
-//   for (let i = 0; i < n; i += 1) {
-//     action(i);
+// const isLoginValid = (login) => {
+//   if (login.length > 3 && login.length < 17) {
+//     return true;
+//   } else {
+//     return false;
 //   }
 // };
 
-// // Передаем printValue как callback-функцию
-// repeat(3, printValue);
-// // 0
-// // 1
-// // 2
+// // console.log(isLoginValid("Poly1"));
+// const isLoginUnique = function(logins, login) {
+//   if (logins.includes(login)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// const addLogin = function(allLogins, login) {
+//   if (!isLoginValid(login)) {
+//     return `Ошибка! Логин должен быть от  4 до 16 символов`;
+//   }
+//   if (!isLoginUnique(allLogins, login)) {
+//     return `Такой логин уже используется!`;
+//   } else {
+//     logins.push(login);
+//     return `Логин успешно добавлен!`;
+//   }
+// };
+// console.log(isLoginValid('Pol'));
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
+let usreLogin;
 
-// // Передаем prettyPrint как callback-функцию
-// repeat(3, prettyPrint);
-// // Logging value: 0
-// // Logging value: 1
-// // Logging value: 2
+const isLoginValid = login => 4 <= login.length && login.length <= 16;
+
+const isLoginUnique = (allLogins, login) =>
+  Array.from(allLogins).includes(login);
+
+usreLogin = prompt('Введіть логін');
+const addLogin = function(allLogins, login) {
+  let message;
+  if (isLoginValid(login)) {
+    if (isLoginUnique(allLogins, login)) {
+      message = 'Логін вдало доданий';
+    } else {
+      message = 'Такий логін вже використовується';
+    }
+  } else {
+    message = 'Помилка! Логін повиненн бути від 4 до 16 символів';
+  }
+  return message;
+};
+console.log(alert);
+
+console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
+console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
+console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Ошибка! Логин должен быть от 4 до 16 символов'

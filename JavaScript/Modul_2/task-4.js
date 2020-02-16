@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // Напиши функцию formatString(string)
 //  которая принимает строку и форматирует
 //   ее если необходимо.
@@ -32,6 +32,10 @@
 //   ),);
 // // вернется форматированная строка
 
+// нужно так!!!!!!!!
+// const formatString = (string, maxLength = 40) =>
+// string.length > maxLength ? `${string.slice(0, maxLength - 1)}...` : string;
+
 const formatString = function(string) {
   if (string.length > 40) {
     string = `${string.slice(0, 40)}...`;
@@ -39,14 +43,14 @@ const formatString = function(string) {
   return string;
 };
 
-console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 
-console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
 
-console.log(formatString("Curabitur ligula sapien."));
+console.log(formatString('Curabitur ligula sapien.'));
 
 console.log(
   formatString(
-    "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
-  )
+    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+  ),
 );
