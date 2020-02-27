@@ -31,14 +31,30 @@ class StringBuilder {
     return this._value;
   }
   append(str) {
+    // this._value = this._value.split('');
+    // this._value.push(str);
+    // const arr = this._value.slice(0);
+    // const stringReturn = arr.join('');
+    // this._value = stringReturn;
     this._value = `${this._value}${str}`;
+    // return this._value;
   }
   prepend(str) {
-    this._value = `${str}${this._value}`;
+    this._value = this._value.split('');
+    this._value.unshift(str);
+    const arr = this._value.slice(0);
+    const stringReturn = arr.join('');
+    this._value = stringReturn;
+    return this._value;
   }
   pad(str) {
-    this.append;
-    this.prepend;
+    this._value = this._value.split('');
+    this._value.push(str);
+    this._value.unshift(str);
+    const arr = this._value.slice(0);
+    const stringReturn = arr.join('');
+    this._value = stringReturn;
+    return this._value;
   }
 }
 const builder = new StringBuilder('.');
