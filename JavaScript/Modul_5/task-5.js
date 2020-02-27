@@ -100,9 +100,7 @@ class Car {
 
   turnOff() {
     this._isOn = false;
-    if (!this._isOn) {
-      this.speed = 0;
-    }
+    this._speed = 0;
   }
 
   accelerate(value) {
