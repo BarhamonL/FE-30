@@ -8,14 +8,24 @@
  * Повторите данную строку str (первый аргумент) num раз (второй аргумент).
  * Вернуть пустую строку, если num не является положительным числом.
  */
-const repeatStringNumTimes = function repeatStringNumTimes(str, num) {
-  const repeat = [];
+// const repeatStringNumTimes = function repeatStringNumTimes(str, num) {
+//   const repeat = [];
 
-  for (let i = 0; i < num; i += 1) {
-    repeat.push(str);
+//   for (let i = 0; i < num; i += 1) {
+//     repeat.push(str);
+//   }
+//   let repeatStr = repeat.join('');
+//   console.log(repeatStr);
+// };
+
+const repeatStringNumTimes = (str, count) => {
+  let res = '';
+
+  for (let i = 0; i < count; i += 1) {
+    res += str;
   }
-  let repeatStr = repeat.join('');
-  console.log(repeatStr);
+
+  return console.log(res);
 };
 
 repeatStringNumTimes('*', 3); // "***"
